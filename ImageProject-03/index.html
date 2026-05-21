@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
 
   <body>
     <a-scene>
 
-      <!-- Blue Sky -->
-      <a-sky color="#87CEEB"></a-sky>
+      <!-- Objects -->
+      <a-box 
+        position="-1 0.5 -3" 
+        rotation="0 45 0" 
+        color="#4CC3D9">
+      </a-box>
 
-      <!-- Ground Plane -->
-      <a-plane
-        position="0 -1 0"
-        rotation="-90 0 0"
-        width="100"
-        height="100"
-        color="#1E90FF">
+      <a-sphere 
+        position="0 1.25 -5" 
+        radius="1.25" 
+        color="#EF2D5E">
+      </a-sphere>
+
+      <a-cylinder 
+        position="1 0.75 -3" 
+        radius="0.5" 
+        height="1.5" 
+        color="#FFC65D">
+      </a-cylinder>
+
+      <a-plane 
+        position="0 0 -4" 
+        rotation="-90 0 0" 
+        width="4" 
+        height="4" 
+        color="#7BC8A4">
       </a-plane>
+
+      <!-- 360 Sky Image -->
+      <a-sky src="sky pro3.jpg"></a-sky>
+
+
+      
 
     </a-scene>
   </body>
